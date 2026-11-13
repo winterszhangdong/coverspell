@@ -1,7 +1,7 @@
 // CoverSpell: premise + question only. The twist is NEVER used in output.
 const FRAMES = [
   p => `${cap(p)} — but is it really that simple?`,
-  p => `Everyone already knows: ${lower(p)}. So what happens next?`,
+  p => `If ${lower(p)} — what could possibly go wrong?`,
   p => `${cap(p)}. Who actually makes the money?`,
   p => `What happens the moment "${lower(p)}" becomes obvious to everyone?`,
   p => `${cap(p)}! This money — can you still earn it?`,
