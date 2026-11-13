@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoverSpell — Questions only. Never spoilers.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="moon"></div>
+<header>
+  <h1>🕯️ CoverSpell</h1>
+  <p class="tagline">Turn any video twist into a curiosity-driven cover headline.<br><strong>Questions only. Never spoilers.</strong></p>
+</header>
+<main>
+  <section class="card">
+    <h2>1. Your video</h2>
+    <label>The premise (what everyone can know)
+      <input id="premise" type="text" placeholder="e.g. Everyone already knows the market will rise tomorrow">
+    </label>
+    <label>The twist / payoff (kept secret — never printed on the cover)
+      <input id="twist" type="text" placeholder="e.g. The rise already happened today, so tomorrow stays flat">
+    </label>
+    <button id="cast">Cast the spell ✨</button>
+    <div class="examples">
+      <span>Try an example:</span>
+      <button class="ghost-btn" data-example="market">📈 The market twist</button>
+      <button class="ghost-btn" data-example="road">🛤️ The road not taken</button>
+      <button class="ghost-btn" data-example="house">🏠 Buy vs. rent</button>
+    </div>
+  </section>
+  <section class="card" id="resultsCard" hidden>
+    <h2>2. Cover headlines (premise + question, zero spoilers)</h2>
+    <ul id="results"></ul>
+  </section>
+  <section class="card">
+    <h2>3. Spoiler check</h2>
+    <p class="hint">Already wrote your own headline? Paste it here and CoverSpell will sniff out words that give the ending away.</p>
+    <label>Your draft headline
+      <input id="draft" type="text" placeholder="e.g. Everyone knows it rises tomorrow, so tomorrow it can't rise!">
+    </label>
+    <button id="check">Check for spoilers 👻</button>
+    <div id="verdict"></div>
+  </section>
+</main>
+<footer>Built with Kiro for Kiroween 2026 · Costume Contest · The twist stays in the video.</footer>
+<script src="app.js"></script>
+</body>
+</html>
