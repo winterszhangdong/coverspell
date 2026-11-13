@@ -1,0 +1,6 @@
+{
+  "name": "spoiler-lint",
+  "description": "On save of generated headline copy, lint against the spoiler-word list from .kiro/steering/cover-rules.md and warn if outcome words or result numbers appear.",
+  "trigger": "onSave",
+  "targets": ["app.js", "index.html"]
+}
